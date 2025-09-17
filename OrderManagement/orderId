@@ -1,0 +1,913 @@
+2025/09/17/ 10:18:51 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 1636 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/ 10:18:51 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/ 10:18:51 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025/09/17/ 10:18:51 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025/09/17/ 10:18:56 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/ 10:18:56 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 195 ms. Found 3 JPA repository interfaces.
+2025/09/17/ 10:18:59 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/ 10:19:00 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/ 10:19:00 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/ 10:19:00 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/ 10:19:00 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8557 ms
+2025/09/17/ 10:19:01 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/ 10:19:02 INFO  [restartedMain] o.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025/09/17/ 10:19:02 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/ 10:19:04 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/ 10:19:04 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025/09/17/ 10:19:07 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49860e95
+2025/09/17/ 10:19:07 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025/09/17/ 10:19:08 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/ 10:19:12 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/ 10:19:12 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/ 10:19:15 INFO  [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025/09/17/ 10:19:16 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/ 10:19:18 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/ 10:19:18 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025/09/17/ 10:19:19 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/ 10:19:19 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 31.354 seconds (process running for 34.863)
+2025/09/17/ 10:21:04 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/ 10:21:04 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/ 10:21:04 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+2025/09/17/ 10:38:10 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/ 10:38:10 INFO  [Thread-5] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/ 10:38:10 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/ 10:38:10 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/ 10:38:10 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025/09/17/ 10:38:11 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025/09/17/ 10:38:11 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 1636 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/ 10:38:11 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/ 10:38:13 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2205 ms
+2025/09/17/ 10:38:14 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/ 10:38:14 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/ 10:38:14 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/ 10:38:14 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2025/09/17/ 10:38:14 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ecfe99e
+2025/09/17/ 10:38:14 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2025/09/17/ 10:38:14 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/ 10:38:14 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/ 10:38:14 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/ 10:38:14 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/ 10:38:15 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/ 10:38:15 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025/09/17/ 10:38:15 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/ 10:38:15 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 3.987 seconds (process running for 1171.015)
+2025/09/17/ 10:38:15 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration#beansEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HttpExchangesEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration#infoEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.InfoEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LogFileWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name orderId (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LoggersEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration#loggersEndpoint matched:
+      - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.logging.LoggingSystem; SearchStrategy: all) found bean 'springBootLoggingSystem'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LoggersEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration.SpringMvcConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   MetricsEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration#metricsEndpoint matched:
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThreadDumpEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration#auditEventsEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration#httpExchangesEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration.ReactiveWebConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025/09/17/10:56:48 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 4436 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/10:56:48 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/10:56:48 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025/09/17/10:56:48 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025/09/17/10:56:51 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/10:56:51 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 3 JPA repository interfaces.
+2025/09/17/10:56:53 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/10:56:53 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/10:56:53 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/10:56:53 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/10:56:53 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4819 ms
+2025/09/17/10:56:54 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/10:56:54 INFO  [restartedMain] o.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025/09/17/10:56:54 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/10:56:55 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/10:56:55 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025/09/17/10:56:57 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@453f93d3
+2025/09/17/10:56:57 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025/09/17/10:56:57 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/10:56:59 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/10:56:59 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/10:57:00 INFO  [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025/09/17/10:57:01 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/10:57:03 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/10:57:03 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025/09/17/10:57:03 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/10:57:03 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 16.475 seconds (process running for 17.76)
+2025/09/17/10:57:07 INFO  [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/10:57:07 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/10:57:07 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2025/09/17/10:57:34 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/10:57:34 INFO  [Thread-5] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/10:57:34 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/10:57:34 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/10:57:34 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025/09/17/10:57:34 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025/09/17/10:57:34 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 4436 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/10:57:34 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/10:57:36 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/10:57:36 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2025/09/17/10:57:36 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/10:57:36 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/10:57:36 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/10:57:36 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/10:57:36 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1872 ms
+2025/09/17/10:57:36 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/10:57:36 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/10:57:36 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/10:57:37 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2025/09/17/10:57:37 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75803704
+2025/09/17/10:57:37 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2025/09/17/10:57:37 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/10:57:37 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/10:57:37 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/10:57:38 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/10:57:38 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/10:57:38 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025/09/17/10:57:38 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/10:57:38 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 3.936 seconds (process running for 52.48)
+2025/09/17/10:57:38 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025/09/17/10:57:38 INFO  [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/10:57:38 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/10:57:38 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+2025/09/17/10:58:42 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/10:58:42 INFO  [Thread-7] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/10:58:43 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/10:58:43 INFO  [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/10:58:43 INFO  [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025/09/17/10:58:43 INFO  [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025/09/17/10:58:43 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 4436 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/10:58:43 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/10:58:44 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/10:58:44 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025/09/17/10:58:44 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/10:58:44 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/10:58:44 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/10:58:44 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/10:58:44 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1666 ms
+2025/09/17/10:58:45 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/10:58:45 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/10:58:45 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/10:58:45 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+2025/09/17/10:58:45 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e7de03f
+2025/09/17/10:58:45 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+2025/09/17/10:58:45 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/10:58:45 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/10:58:45 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/10:58:45 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/10:58:46 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/10:58:46 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025/09/17/10:58:46 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/10:58:46 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 3.0 seconds (process running for 120.052)
+2025/09/17/10:58:46 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   ConditionsReportEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   HttpExchangesEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   MappingsEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+
+   SbomEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint not exposed (OnAvailableEndpointCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025/09/17/10:58:46 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/10:58:46 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/10:58:46 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+2025/09/17/11:01:25 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/11:01:25 INFO  [Thread-11] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/11:01:26 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/11:01:26 INFO  [Thread-11] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:01:26 INFO  [Thread-11] c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025/09/17/11:01:26 INFO  [Thread-11] c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025/09/17/11:01:26 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 4436 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/11:01:26 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/11:01:27 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/11:01:27 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2025/09/17/11:01:28 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/11:01:28 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/11:01:28 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/11:01:28 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/11:01:28 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1968 ms
+2025/09/17/11:01:28 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/11:01:28 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/11:01:28 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/11:01:28 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-4 - Starting...
+2025/09/17/11:01:28 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51bad208
+2025/09/17/11:01:28 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-4 - Start completed.
+2025/09/17/11:01:28 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/11:01:29 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/11:01:29 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:01:29 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/11:01:30 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/11:01:30 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025/09/17/11:01:30 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/11:01:30 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 4.095 seconds (process running for 284.299)
+2025/09/17/11:01:30 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   BeansEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration#beansEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025/09/17/11:01:30 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/11:01:30 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/11:01:30 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 8 ms
+2025/09/17/11:26:57 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/11:26:57 INFO  [Thread-15] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/11:26:57 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/11:26:57 INFO  [Thread-15] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:26:57 INFO  [Thread-15] c.z.h.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025/09/17/11:26:57 INFO  [Thread-15] c.z.h.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025/09/17/11:26:58 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 4436 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/11:26:58 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/11:26:59 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/11:26:59 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2025/09/17/11:26:59 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/11:26:59 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/11:26:59 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/11:26:59 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/11:26:59 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1571 ms
+2025/09/17/11:26:59 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/11:26:59 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/11:26:59 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/11:26:59 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-5 - Starting...
+2025/09/17/11:26:59 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ae68ac
+2025/09/17/11:26:59 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-5 - Start completed.
+2025/09/17/11:26:59 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/11:27:00 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/11:27:00 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:27:00 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/11:27:00 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/11:27:00 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025/09/17/11:27:00 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/11:27:00 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 2.692 seconds (process running for 1814.596)
+2025/09/17/11:27:00 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   InfoContributorAutoConfiguration#envInfoContributor matched:
+      - @ConditionalOnEnabledInfoContributor management.info.env.enabled is true (OnEnabledInfoContributorCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025/09/17/11:27:13 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/11:27:13 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/11:27:13 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 3 ms
+2025/09/17/11:29:29 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/11:29:29 INFO  [Thread-19] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/11:29:30 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/11:29:30 INFO  [Thread-19] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:29:30 INFO  [Thread-19] c.z.h.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025/09/17/11:29:30 INFO  [Thread-19] c.z.h.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025/09/17/11:29:30 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 4436 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/11:29:30 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/11:29:30 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/11:29:30 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2025/09/17/11:29:30 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/11:29:30 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/11:29:30 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/11:29:30 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/11:29:30 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 838 ms
+2025/09/17/11:29:31 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/11:29:31 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/11:29:31 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/11:29:31 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-6 - Starting...
+2025/09/17/11:29:31 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b8601dc
+2025/09/17/11:29:31 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-6 - Start completed.
+2025/09/17/11:29:31 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/11:29:31 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/11:29:31 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:29:31 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/11:29:31 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/11:29:31 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025/09/17/11:29:31 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/11:29:31 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 1.525 seconds (process running for 1965.51)
+2025/09/17/11:29:31 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HttpExchangesEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration#infoEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.InfoEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LogFileWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name orderId (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LoggersEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration#loggersEndpoint matched:
+      - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.logging.LoggingSystem; SearchStrategy: all) found bean 'springBootLoggingSystem'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LoggersEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration.SpringMvcConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   MetricsEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration#metricsEndpoint matched:
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThreadDumpEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration#auditEventsEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration#httpExchangesEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration.ReactiveWebConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025/09/17/11:29:32 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/11:29:32 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/11:29:32 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025/09/17/11:53:38 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025/09/17/11:53:38 INFO  [Thread-23] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/11:53:39 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/11:53:40 INFO  [Thread-23] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/11:53:41 INFO  [Thread-23] c.z.h.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025/09/17/11:53:43 INFO  [Thread-23] c.z.h.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025/09/17/12:07:05 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 20076 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/12:07:05 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/12:07:05 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025/09/17/12:07:05 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025/09/17/12:07:11 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/12:07:12 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 258 ms. Found 3 JPA repository interfaces.
+2025/09/17/12:07:18 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/12:07:19 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/12:07:19 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/12:07:19 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/12:07:19 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13957 ms
+2025/09/17/12:07:22 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/12:07:22 INFO  [restartedMain] o.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025/09/17/12:07:23 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/12:07:24 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/12:07:25 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025/09/17/12:07:31 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61fe303b
+2025/09/17/12:07:31 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025/09/17/12:07:32 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/12:07:36 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/12:07:38 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/12:07:40 INFO  [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025/09/17/12:07:42 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/12:07:46 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/12:07:46 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025/09/17/12:07:47 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/12:07:47 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 44.119 seconds (process running for 46.391)
+2025/09/17/12:09:08 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/12:09:08 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/12:09:08 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 6 ms
+2025/09/17/12:10:25 TRACE [http-nio-9090-exec-5] c.f.s.i.OrderServiceImpl - Order requestDto : [OrderRequestDto(productId=2, quantity=5, price=20000.0)] 
+2025/09/17/12:10:25 DEBUG [http-nio-9090-exec-5] c.f.s.i.OrderServiceImpl - Entered placeOrder method
+2025/09/17/12:10:25 DEBUG [http-nio-9090-exec-5] c.f.s.i.OrderServiceImpl - Processin Order Request DTO's to Order Items
+2025/09/17/12:10:31 WARN  [http-nio-9090-exec-5] c.f.s.i.OrderServiceImpl - Insufficient quantity only 4 available
+2025/09/17/12:10:39 DEBUG [http-nio-9090-exec-5] c.f.s.i.OrderServiceImpl - Entered OrderResponseDto from order method
+2025/09/17/12:10:39 DEBUG [http-nio-9090-exec-5] c.f.s.i.OrderServiceImpl - Returning from buildOrderResponseDtoFromOrder
+2025/09/17/12:16:28 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025/09/17/12:16:28 INFO  [Thread-5] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025/09/17/12:16:29 INFO  [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025/09/17/12:16:30 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/12:16:30 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025/09/17/12:16:31 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025/09/17/12:16:35 INFO  [restartedMain] c.f.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.12 with PID 20076 (C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\OrderManagement)
+2025/09/17/12:16:35 INFO  [restartedMain] c.f.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025/09/17/12:16:52 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025/09/17/12:16:52 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces.
+2025/09/17/12:16:56 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025/09/17/12:16:56 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/12:16:56 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/12:16:56 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/12:16:56 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 20646 ms
+2025/09/17/12:16:57 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025/09/17/12:16:57 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025/09/17/12:16:57 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025/09/17/12:16:57 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2025/09/17/12:16:59 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54793b42
+2025/09/17/12:16:59 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2025/09/17/12:16:59 INFO  [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025/09/17/12:16:59 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025/09/17/12:17:05 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025/09/17/12:17:05 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025/09/17/12:17:06 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025/09/17/12:17:06 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025/09/17/12:17:12 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 13000 (http)
+2025/09/17/12:17:12 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025/09/17/12:17:12 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025/09/17/12:17:13 INFO  [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025/09/17/12:17:13 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025/09/17/12:17:13 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025/09/17/12:17:13 TRACE [http-nio-9090-exec-2] c.f.s.i.OrderServiceImpl - Order requestDto : [OrderRequestDto(productId=2, quantity=1, price=20000.0)] 
+2025/09/17/12:17:13 DEBUG [http-nio-9090-exec-2] c.f.s.i.OrderServiceImpl - Entered placeOrder method
+2025/09/17/12:17:13 DEBUG [http-nio-9090-exec-2] c.f.s.i.OrderServiceImpl - Processin Order Request DTO's to Order Items
+2025/09/17/12:17:15 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025/09/17/12:17:16 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9280 ms
+2025/09/17/12:17:16 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2025/09/17/12:17:19 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 13000 (http) with context path '/'
+2025/09/17/12:17:19 INFO  [restartedMain] c.f.OrderManagementApplication - Started OrderManagementApplication in 44.07 seconds (process running for 618.559)
+2025/09/17/12:17:19 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ManagementContextAutoConfiguration.DifferentManagementContextConfiguration matched:
+      - Management Port actual port type (DIFFERENT) matched required type (OnManagementPortCondition)
+
+
+Negative matches:
+-----------------
+
+   ManagementContextAutoConfiguration.SameManagementContextConfiguration:
+      Did not match:
+         - Management Port actual port type (DIFFERENT) did not match required type (SAME) (OnManagementPortCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025/09/17/12:17:42 DEBUG [http-nio-9090-exec-2] c.f.s.i.OrderServiceImpl - Entered OrderResponseDto from order method
+2025/09/17/12:17:42 DEBUG [http-nio-9090-exec-2] c.f.s.i.OrderServiceImpl - Returning from buildOrderResponseDtoFromOrder
+2025/09/17/12:19:29 INFO  [http-nio-13000-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025/09/17/12:19:29 INFO  [http-nio-13000-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServletRegistration'
+2025/09/17/12:19:29 INFO  [http-nio-13000-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2025/09/17/12:20:52 TRACE [http-nio-9090-exec-3] c.f.s.i.OrderServiceImpl - Order requestDto : [OrderRequestDto(productId=2, quantity=1, price=20000.0)] 
+2025/09/17/12:20:52 DEBUG [http-nio-9090-exec-3] c.f.s.i.OrderServiceImpl - Entered placeOrder method
+2025/09/17/12:20:52 DEBUG [http-nio-9090-exec-3] c.f.s.i.OrderServiceImpl - Processin Order Request DTO's to Order Items
+2025/09/17/12:21:08 TRACE [http-nio-9090-exec-6] c.f.s.i.OrderServiceImpl - Order requestDto : [OrderRequestDto(productId=2, quantity=1, price=20000.0)] 
+2025/09/17/12:21:08 DEBUG [http-nio-9090-exec-6] c.f.s.i.OrderServiceImpl - Entered placeOrder method
+2025/09/17/12:21:08 DEBUG [http-nio-9090-exec-6] c.f.s.i.OrderServiceImpl - Processin Order Request DTO's to Order Items
+2025/09/17/12:21:15 DEBUG [http-nio-9090-exec-3] c.f.s.i.OrderServiceImpl - Entered OrderResponseDto from order method
+2025/09/17/12:21:15 DEBUG [http-nio-9090-exec-3] c.f.s.i.OrderServiceImpl - Returning from buildOrderResponseDtoFromOrder
+2025/09/17/12:21:23 DEBUG [http-nio-9090-exec-6] c.f.s.i.OrderServiceImpl - Entered OrderResponseDto from order method
+2025/09/17/12:21:23 DEBUG [http-nio-9090-exec-6] c.f.s.i.OrderServiceImpl - Returning from buildOrderResponseDtoFromOrder
+2025/09/17/14:05:09 WARN  [HikariPool-2:housekeeper] c.z.h.p.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h38m40s277ms94µs300ns).
